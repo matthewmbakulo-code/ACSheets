@@ -8,75 +8,257 @@
 </head>
 <body>
   <header>
-    <h1>ACSheet.com</h1>
-    <p>Your trusted ACBUY & DHGate product catalog</p>
+    <div class="logo">ACSheet.com</div>
+    <nav>
+      <ul>
+        <li><a href="#acbuy">ACBUY</a></li>
+        <li><a href="#dhgate">DHGate</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
+    <!-- ACBUY Section -->
     <section id="acbuy" class="catalog-section">
       <h2>ACBUY Products</h2>
 
-      <div class="category">
-        <h3>Shirts</h3>
-        <div class="products">
-          <!-- Example product card -->
-          <div class="card">
-            <img src="https://via.placeholder.com/250x200?text=Shirt+Image" alt="ACBUY Shirt" />
-            <h4>ACBUY Stylish Shirt</h4>
-            <p class="price">$25</p>
-            <a href="#" target="_blank">View Product</a>
-          </div>
-        </div>
+      <!-- Categories Navigation -->
+      <div class="category-nav">
+        <button class="category-btn active" data-category="acbuy-shirts">Shirts</button>
+        <button class="category-btn" data-category="acbuy-electronics">Electronics</button>
+        <button class="category-btn" data-category="acbuy-sweaters">Sweaters</button>
+        <button class="category-btn" data-category="acbuy-pants-shorts">Pants & Shorts</button>
+        <button class="category-btn" data-category="acbuy-jackets">Jackets</button>
+        <button class="category-btn" data-category="acbuy-shoes">Shoes</button>
+        <button class="category-btn" data-category="acbuy-others">Others</button>
       </div>
 
-      <div class="category">
-        <h3>Electronics</h3>
-        <div class="products">
+      <!-- Products container for all categories, only one category visible at a time -->
+      <div class="products-container">
+        <!-- Shirts -->
+        <div class="products active" id="acbuy-shirts">
+          <!-- Example Product Card -->
           <div class="card">
-            <img src="https://via.placeholder.com/250x200?text=Electronics" alt="ACBUY Electronics" />
-            <h4>ACBUY Wireless Earbuds</h4>
-            <p class="price">$75</p>
-            <a href="#" target="_blank">View Product</a>
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/ab3e548f-58ac-479b-b101-e0fdc4249de0/react-infinity-run-flyknit-3-road-running-shoe-w5lVWN.png" alt="ACBUY Running Shirt" />
+            <h3>ACBUY Running Shirt</h3>
+            <p class="price">$45 USD</p>
+            <p class="variants">Colors: Red, Blue, Black</p>
+            <a href="https://www.acbuy.com/product/12345" target="_blank">View Product</a>
           </div>
+
+          <div class="card">
+            <img src="https://cdn.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9862352999e8493bb3d6ab6c01407f6f_9366/essentials-3-stripes-t-shirt-white-ED7033_01_laydown.jpg" alt="ACBUY Casual Shirt" />
+            <h3>ACBUY Casual Shirt</h3>
+            <p class="price">$38 USD</p>
+            <p class="variants">Colors: White, Grey, Navy</p>
+            <a href="https://www.acbuy.com/product/23456" target="_blank">View Product</a>
+          </div>
+
+          <!-- Add 38+ more shirts in similar structure -->
+          <div class="card"> <!-- product card 3 -->
+            <img src="https://cdn.shopify.com/s/files/1/0289/2716/6452/products/mens-performance-fitness-shirt.jpg" alt="ACBUY Fitness Shirt" />
+            <h3>ACBUY Fitness Shirt</h3>
+            <p class="price">$42 USD</p>
+            <p class="variants">Colors: Black, Green, White</p>
+            <a href="https://www.acbuy.com/product/98765" target="_blank">View Product</a>
+          </div>
+          <!-- ... and so on for 40+ shirts -->
+        </div>
+
+        <!-- Electronics -->
+        <div class="products" id="acbuy-electronics">
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61yjSczLkpL._AC_SL1500_.jpg" alt="ACBUY Bluetooth Headphones" />
+            <h3>Bluetooth Headphones</h3>
+            <p class="price">$75 USD</p>
+            <p class="variants">Colors: Black, White</p>
+            <a href="https://www.acbuy.com/product/34567" target="_blank">View Product</a>
+          </div>
+
+          <!-- Add 39+ electronics -->
+        </div>
+
+        <!-- Sweaters -->
+        <div class="products" id="acbuy-sweaters">
+          <div class="card">
+            <img src="https://images.pexels.com/photos/1002645/pexels-photo-1002645.jpeg" alt="ACBUY Winter Sweater" />
+            <h3>Winter Sweater</h3>
+            <p class="price">$55 USD</p>
+            <p class="variants">Colors: Gray, Blue</p>
+            <a href="https://www.acbuy.com/product/45678" target="_blank">View Product</a>
+          </div>
+
+          <!-- Add 39+ sweaters -->
+        </div>
+
+        <!-- Pants & Shorts -->
+        <div class="products" id="acbuy-pants-shorts">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="ACBUY Casual Pants" />
+            <h3>Casual Pants</h3>
+            <p class="price">$50 USD</p>
+            <p class="variants">Colors: Beige, Black</p>
+            <a href="https://www.acbuy.com/product/56789" target="_blank">View Product</a>
+          </div>
+          <!-- Add 39+ pants & shorts -->
+        </div>
+
+        <!-- Jackets -->
+        <div class="products" id="acbuy-jackets">
+          <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/0263/5273/9769/products/black-leather-jacket.jpg" alt="ACBUY Leather Jacket" />
+            <h3>Leather Jacket</h3>
+            <p class="price">$120 USD</p>
+            <p class="variants">Colors: Black, Brown</p>
+            <a href="https://www.acbuy.com/product/67890" target="_blank">View Product</a>
+          </div>
+          <!-- Add 39+ jackets -->
+        </div>
+
+        <!-- Shoes -->
+        <div class="products" id="acbuy-shoes">
+          <div class="card">
+            <img src="https://cdn.brandfolder.io/BTZ7TPA7/at/bpzfjf5g7pkzpyr6dhjrs7gc/nike-air-max-270.jpg" alt="ACBUY Running Shoes" />
+            <h3>Running Shoes</h3>
+            <p class="price">$150 USD</p>
+            <p class="variants">Colors: Black, White, Red</p>
+            <a href="https://www.acbuy.com/product/78901" target="_blank">View Product</a>
+          </div>
+          <!-- Add 39+ shoes -->
+        </div>
+
+        <!-- Others -->
+        <div class="products" id="acbuy-others">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/sunglasses-1866574_1280.jpg" alt="ACBUY Sunglasses" />
+            <h3>Polarized Sunglasses</h3>
+            <p class="price">$35 USD</p>
+            <p class="variants">Colors: Black, Brown</p>
+            <a href="https://www.acbuy.com/product/89012" target="_blank">View Product</a>
+          </div>
+          <!-- Add more 'other' products -->
         </div>
       </div>
-
-      <!-- More ACBUY categories like sweaters, pants & shorts, jackets, shoes, others -->
     </section>
 
+    <!-- DHGate Section -->
     <section id="dhgate" class="catalog-section">
       <h2>DHGate Products</h2>
 
-      <div class="category">
-        <h3>Shirts</h3>
-        <div class="products">
-          <div class="card">
-            <img src="https://via.placeholder.com/250x200?text=DHGate+Shirt" alt="DHGate Shirt" />
-            <h4>DHGate Casual Shirt</h4>
-            <p class="price">$22</p>
-            <a href="#" target="_blank">View Product</a>
-          </div>
-        </div>
+      <div class="category-nav">
+        <button class="category-btn active" data-category="dhgate-shirts">Shirts</button>
+        <button class="category-btn" data-category="dhgate-electronics">Electronics</button>
+        <button class="category-btn" data-category="dhgate-sweaters">Sweaters</button>
+        <button class="category-btn" data-category="dhgate-pants-shorts">Pants & Shorts</button>
+        <button class="category-btn" data-category="dhgate-jackets">Jackets</button>
+        <button class="category-btn" data-category="dhgate-shoes">Shoes</button>
+        <button class="category-btn" data-category="dhgate-others">Others</button>
       </div>
 
-      <div class="category">
-        <h3>Electronics</h3>
-        <div class="products">
+      <div class="products-container">
+        <div class="products active" id="dhgate-shirts">
           <div class="card">
-            <img src="https://via.placeholder.com/250x200?text=DHGate+Electronics" alt="DHGate Electronics" />
-            <h4>DHGate Bluetooth Speaker</h4>
-            <p class="price">$48</p>
-            <a href="#" target="_blank">View Product</a>
+            <img src="https://www.pngkey.com/png/full/6-62971_mens-shirt-png-image-men-shirt-png.png" alt="DHGate Men's Shirt" />
+            <h3>DHGate Men's Shirt</h3>
+            <p class="price">$20 USD</p>
+            <p class="variants">Colors: White, Blue, Black</p>
+            <a href="https://www.dhgate.com/product/men-shirt" target="_blank">View Product</a>
           </div>
+          <!-- Add 39+ shirts -->
+        </div>
+
+        <div class="products" id="dhgate-electronics">
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51cw+o6esaL._AC_SX679_.jpg" alt="DHGate Bluetooth Speaker" />
+            <h3>DHGate Bluetooth Speaker</h3>
+            <p class="price">$60 USD</p>
+            <p class="variants">Colors: Black, White</p>
+            <a href="https://www.dhgate.com/product/bluetooth-speaker" target="_blank">View Product</a>
+          </div>
+          <!-- Add 39+ electronics -->
+        </div>
+
+        <div class="products" id="dhgate-sweaters">
+          <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/0286/1328/products/hoodie.jpg" alt="DHGate Hoodie" />
+            <h3>DHGate Hoodie</h3>
+            <p class="price">$45 USD</p>
+            <p class="variants">Colors: Gray, Black</p>
+            <a href="https://www.dhgate.com/product/hoodie" target="_blank">View Product</a>
+          </div>
+          <!-- Add 39+ sweaters -->
+        </div>
+
+        <div class="products" id="dhgate-pants-shorts">
+          <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/0337/7851/products/casual-pants.jpg" alt="DHGate Casual Pants" />
+            <h3>DHGate Casual Pants</h3>
+            <p class="price">$40 USD</p>
+            <p class="variants">Colors: Beige, Black</p>
+            <a href="https://www.dhgate.com/product/casual-pants" target="_blank">View Product</a>
+          </div>
+          <!-- Add 39+ pants & shorts -->
+        </div>
+
+        <div class="products" id="dhgate-jackets">
+          <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/0117/6663/9272/products/motorcycle-leather-jacket.jpg" alt="DHGate Leather Jacket" />
+            <h3>DHGate Leather Jacket</h3>
+            <p class="price">$110 USD</p>
+            <p class="variants">Colors: Black, Brown</p>
+            <a href="https://www.dhgate.com/product/leather-jacket" target="_blank">View Product</a>
+          </div>
+          <!-- Add 39+ jackets -->
+        </div>
+
+        <div class="products" id="dhgate-shoes">
+          <div class="card">
+            <img src="https://cdn.cnn.com/cnnnext/dam/assets/230624091247-02-nike-air-max-270-react-superhero-timeline-exlarge-169.jpg" alt="DHGate Running Shoes" />
+            <h3>DHGate Running Shoes</h3>
+            <p class="price">$140 USD</p>
+            <p class="variants">Colors: Black, White, Red</p>
+            <a href="https://www.dhgate.com/product/running-shoes" target="_blank">View Product</a>
+          </div>
+          <!-- Add 39+ shoes -->
+        </div>
+
+        <div class="products" id="dhgate-others">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/12/06/09/31/sunglasses-1886674_1280.jpg" alt="DHGate Sunglasses" />
+            <h3>DHGate Sunglasses</h3>
+            <p class="price">$30 USD</p>
+            <p class="variants">Colors: Black, Brown</p>
+            <a href="https://www.dhgate.com/product/sunglasses" target="_blank">View Product</a>
+          </div>
+          <!-- Add more others -->
         </div>
       </div>
-
-      <!-- More DHGate categories like sweaters, pants & shorts, jackets, shoes, others -->
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 ACSheet.com | ACBUY & DHGate Catalog</p>
   </footer>
+
+  <script>
+    // JavaScript for category switching
+    const categoryBtns = document.querySelectorAll(".category-btn");
+    const productsSections = document.querySelectorAll(".products");
+
+    categoryBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // Remove active states
+        categoryBtns.forEach((b) => b.classList.remove("active"));
+        productsSections.forEach((sec) => sec.classList.remove("active"));
+
+        // Add active state to clicked button
+        btn.classList.add("active");
+
+        // Show corresponding products
+        const categoryId = btn.getAttribute("data-category");
+        document.getElementById(categoryId).classList.add("active");
+      });
+    });
+  </script>
 </body>
 </html>
