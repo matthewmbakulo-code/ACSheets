@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Product Catalog</h1>
+  <div class="catalog">
+    <div class="card">
+      <img src="https://example.com/product.jpg" alt="Product">
+      <h2>Essentials Hoodie</h2>
+      <p>$48</p>
+      <a href="https://acbuy.affiliate.link" target="_blank">Buy Now</a>
+    </div>
+  </div>
+</body>
+</html>º 
